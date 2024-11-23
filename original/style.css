@@ -1,0 +1,51 @@
+:root {
+    --salmon: hwb(240 5% 8% / 0.801);
+    --black: #000;
+    --white: #fff;
+    --customcolor: #F5F19C;
+    --dcyan: #000;
+    --cyan: #ffffff;
+    --dsalmon: #532521;
+
+}
+
+*::selection {
+    background-color: var(--salmon);
+    color: var(--dsalmon)
+}
+
+body[theme="cyan"] {
+    background-color: var(--cyan);
+}
+
+body[theme="cyan"] .section {
+    color: var(--dcyan);
+}
+
+body[theme="salmon"] {
+    background-color: var(--cyan);
+}
+
+body[theme="salmon"] .section {
+    color: var(--dcyan);
+}
+
+body[theme="white"] {
+    background-color: var(--salmon);
+}
+
+body[theme="white"] .section {
+    color: var(--dsalmon);
+}
+
+body[theme="customcolor"] {
+    background-color: var(--customcolor);
+}
+
+body[theme="customcolor"] .section {
+    color: var(--dcyan);
+}
+
+.vdodiv {
+    clip-path: circle(var(--clip) at 50% 50%)
+}
